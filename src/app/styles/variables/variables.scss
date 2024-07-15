@@ -1,0 +1,55 @@
+// @import "../../../public/assets/fonts/poppins";
+// Body
+$body-bg: #ffffff;
+
+// Typography family
+$ff: "Rubik", sans-serif;
+
+// Typography font size
+$fs-h1: 36px;
+$fs-h2: 24px;
+$fs-h3: 20px;
+$fs-h4: 18px;
+$fs-h5: 16px;
+$fs-h6: 14px;
+$fs-p1: 22px;
+$fs-p2: 20px;
+$fs-p3: 18px;
+$fs-p4: 16px;
+$fs-p5: 14px;
+
+// Typography font weight
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 600;
+
+//Colors
+$main: #0d80a3;
+$additional1: #0d80a380;
+$additional2: #f0f5ff;
+$additional3: #0d80a32e;
+$H: #012c39;
+$txt: #64757b;
+$disable: #b2c5cb;
+$stroke: #e1eaf5;
+$Bg: #eaf3f9;
+$optional: #ffffff;
+$destructive: #d82828;
+
+//Screens
+$tablet: 1280px;
+$small-tablet: 992px;
+$mobile: 768px;
+$small-mobile: 576px;
+$sm: 640px;
+$md: 768px;
+$lg: 976px;
+$xl: 1280px;
+$xxl: 1440px;
+
+//Container
+$max-width-container: 1140px;
+$container-side-distance: 40px;
+$container-side-distance-mobile: 24px;
+$container-width: calc(100% - calc(2 * $container-side-distance));
+$container-width-mobile: calc(100% - calc(2 * $container-side-distance-mobile));

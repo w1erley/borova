@@ -1,0 +1,22 @@
+@import "../../styles/variables/variables.scss";
+.footer {
+  border-radius: 20px 20px 0px 0px;
+  display: block;
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+.nav_section {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  @media (max-width: $small-mobile) {
+    border-bottom: none;
+    padding: 0;
+  }
+}
+.nav_links {
+  column-gap: 28px;
+}
+
+.privacy {
+  color: rgba(255, 255, 255, 0.5);
+}

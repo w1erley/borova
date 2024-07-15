@@ -1,0 +1,10 @@
+@import "./variables/variables.scss";
+
+.container {
+  width: $container-width;
+  max-width: $max-width-container;
+  margin: 0 auto;
+  @media (max-width: $small-mobile) {
+    width: $container-width-mobile;
+  }
+}
