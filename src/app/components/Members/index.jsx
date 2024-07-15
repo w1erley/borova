@@ -50,8 +50,8 @@ export default function Members({members: initialMembers, openMembersModal}) {
 
   return (
     <div class="grid grid-cols-3 gap-4">
-      {members.map(member => (
-        <div className='flex flex-col items-center gap-y-3 pb-5' style={{background: '#fff'}}>
+      {members.map((member, index) => (
+        <div className='flex flex-col items-center gap-y-3 pb-5' style={{background: '#fff'}} key={`member-${index}`}>
           <div style={{backgroundImage: `url(${member.profilePhotosPath}/background.jpg`}} className={`${styles.background} w-full`}>
             <div className={`${styles.overlay}`}>
             </div>

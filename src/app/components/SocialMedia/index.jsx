@@ -42,8 +42,8 @@ export default function SocialMedia() {
     <div className={`${socialStatus === "youtube" ? "bg-red-800" : "bg-blue-900"} flex flex-col items-center py-[25px] gap-y-2`}>
       <Image src={`/images/social-media/${socialStatus === "youtube" ? "youtube" : "facebook"}.png`} width={64} height={64}/>
       <h3 className='text-white'>{socialStatus === "youtube" ? "YouTube" : "Facebook"} profiles</h3>
-      {socialLinks.map(link => (
-        <Link href={link.href} className='text-white/50'>{link.name}</Link>
+      {socialLinks.map((link, index) => (
+        <Link href={link.href} className='text-white/50' key={`social-link-${index}`}>{link.name}</Link>
       ))
       }
       <RadioGroup

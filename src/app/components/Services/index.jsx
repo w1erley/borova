@@ -29,9 +29,10 @@ export default function Services() {
 
   return (
     <div class="grid grid-cols-2 gap-4">
-      {services.map(service => (
+      {services.map((service, index) => (
           <Link
             href={service.link}
+            key={`service-${index}`}
           >
             <div style={{backgroundImage: `url(../../../../../images/services/${service.image})`}} className={`${styles.service} text-white`}>
               <div className={`${styles.opacitier} flex`}>
